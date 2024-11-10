@@ -11,7 +11,7 @@ constructed_url = endpoint + path
 params = {
     'api-version': '3.0',
     'from': 'en',
-    'to': ['fr', 'zu', 'pt-BR', 'es', 'ja']
+    'to': ['fr', 'zu', 'pt-BR', 'es', 'ja', "it"]
 }
 
 headers = {
