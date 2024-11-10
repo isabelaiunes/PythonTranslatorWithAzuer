@@ -1,11 +1,8 @@
 import requests, uuid, json
 
-# Add your key and endpoint
 key = "AlEMjzpt6Ak7QECFfRTlGiEViGuUKV1Ay0HWpgPfTEX6bqiVeHoRJQQJ99AKACZoyfiXJ3w3AAAbACOGEdZ1"
 endpoint = "https://api.cognitive.microsofttranslator.com"
 
-# location, also known as region.
-# required if you're using a multi-service or regional (not global) resource. It can be found in the Azure portal on the Keys and Endpoint page.
 location = "brazilsouth"
 
 path = '/translate'
@@ -19,13 +16,11 @@ params = {
 
 headers = {
     'Ocp-Apim-Subscription-Key': key,
-    # location required if you're using a multi-service or regional (not global) resource.
     'Ocp-Apim-Subscription-Region': location,
     'Content-type': 'application/json',
     'X-ClientTraceId': str(uuid.uuid4())
 }
 
-# You can pass more than one object in body.
 body = [{
     'text': 'We are lights that spark in the chaos'
 }]
